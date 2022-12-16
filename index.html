@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Avançado</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="page">
+  <header>
+    <h1>Avalie a sua mentoria</h1>
+    <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+    <img src="./images/img1.svg" alt="Balão de diálogo">
+    <legend id="top">Informações Pessoais</legend>
+  </header>
+
+  <form id="my-form">
+    <div id="wrapper">
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <div class="col-2">
+      <div class="input-wrapper">
+        <label for="name">Nome</label>
+        <input type="text" id="name">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="last-name">Sobrenome</label>
+        <input type="text" id="last-name">
+        </div>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="e-mail">Email <span>(digite um email válido)</span></label>
+        <input type="email" id="e-mail">
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="fieldset-wrapper">
+      <legend>Informações do Mentor</legend>
+      <div class="input-wrapper">
+        <label for="mentor">Selecione quem foi seu mentor</label>
+        <input type="text" id="mentor">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="feedback">Feedback sobre o mentor</label>
+        <textarea id="feedback"></textarea>
+      </div>
+
+      <div id="checkbox" class="input-wrapper">
+        <input type="checkbox" id="confirm">
+        <label for="confirm">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+      </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>Agendando próxima mentoria</legend>
+        <div class="col-3">
+      <div class="input-wrapper">
+        <label for="date">Data</label>
+        <input type="date" id="date">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="hour">Das</label>
+        <input type="time" id="hour">
+      </div>
+
+      <div class="input-wrapper">
+        <label for="hour">Até</label>
+        <input type="time" id="hour">
+      </div>
+        </div>
+      </div>
+    </fieldset>
+    <input type="submit" id="button" value="Salvar">
+    </div>
+  </form>
+  </div>
+  </body>
+</html>
